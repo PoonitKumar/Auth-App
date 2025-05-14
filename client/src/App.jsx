@@ -9,7 +9,7 @@ import { Toaster } from "react-hot-toast";
 import { UserContextProvider } from "../context/userContext";
 import Dashboard from "./pages/Dashboard";
 
-axios.defaults.baseURL = "http://localhost:8000/";
+axios.defaults.baseURL = "https://auth-app-backend-f4lu.onrender.com/";
 axios.defaults.withCredentials = true;
 
 function App() {
