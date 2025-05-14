@@ -21,7 +21,6 @@ export default function Login() {
         email,
         password,
       });
-      console.log(data);
       if (data.error) {
         toast.error(data.error);
       } else {
