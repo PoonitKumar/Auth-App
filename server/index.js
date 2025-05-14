@@ -5,6 +5,13 @@ const { mongoose } = require("mongoose");
 const cookieParser = require("cookie-parser");
 const app = express();
 
+app.use(
+  cors({
+    credentials: true,
+    origin: "https://auth-app-frontend-49s7.onrender.com",
+  })
+);
+
 // database connection
 mongoose
   .connect(process.env.MONGO_URL)

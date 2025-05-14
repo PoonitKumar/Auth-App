@@ -9,13 +9,6 @@ const {
   logoutUser,
 } = require("../controllers/authController");
 
-router.use(
-  cors({
-    credentials: true,
-    origin: "https://auth-app-frontend-49s7.onrender.com",
-  })
-);
-
 router.get("/", test);
 
 router.post("/register", registerUser);
